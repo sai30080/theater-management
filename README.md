@@ -3,7 +3,7 @@
  - checkout
  - mvn clean install
  - run the entry program
- -input data
+ -input data </br>
  6 6 </br>
 3 5 5 3 </br>
 4 6 6 4 </br>
