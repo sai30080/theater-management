@@ -3,9 +3,9 @@ package com.theature.theaterdata.main;
 import java.util.List;
 import java.util.Scanner;
 
+import com.theature.theaterdata.algo.TheaterSeatingSearch;
 import com.theature.theaterdata.model.PartyRequest;
 import com.theature.theaterdata.model.TheaterLayout;
-import com.theature.theaterdata.model.algo.TheaterSeatingSearch;
 
 public class EntryProgram {
 

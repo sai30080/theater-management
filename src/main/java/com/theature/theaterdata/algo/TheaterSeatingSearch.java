@@ -1,4 +1,4 @@
-package com.theature.theaterdata.model.algo;
+package com.theature.theaterdata.algo;
 
 import java.util.ArrayList;
 import java.util.Collections;
