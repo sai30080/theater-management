@@ -1,4 +1,4 @@
-package com.theature.theaterdata.model.main;
+package com.theature.theaterdata.main;
 
 import java.util.List;
 import java.util.Scanner;
@@ -43,23 +43,11 @@ public class EntryProgram {
 
 		TheaterSeatingSearch seatingService = new TheaterSeatingSearch();
 
-		try {
+		TheaterLayout theaterLayout = seatingService.getTheaterLayout(layout.toString());
 
-			TheaterLayout theaterLayout = seatingService.getTheaterLayout(layout.toString());
+		List<PartyRequest> requests = seatingService.getTicketRequests(ticketRequests.toString());
 
-			List<PartyRequest> requests = seatingService.getTicketRequests(ticketRequests.toString());
-
-			seatingService.processTicketRequests(theaterLayout, requests);
-
-		} catch (NumberFormatException nfe) {
-
-			System.out.println(nfe.getMessage());
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-
-		}
+		seatingService.processTicketRequests(theaterLayout, requests);
 
 	}
 
