@@ -4,7 +4,9 @@
  - mvn clean install
  - run the entry program
  -input data </br>
- 6 6 </br>
+
+
+6 6 </br>
 3 5 5 3 </br>
 4 6 6 4 </br>
 2 8 8 2 </br>
